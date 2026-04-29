@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>설문조사</title>
+    <script>
+        function goToSurvey() {
+            const rand = Math.random();
+            if (rand < 0.5) {
+                window.location.href = "https://forms.gle/cBZzBe2JQpbo1WxJ8"; // Version 1
+            } else {
+                window.location.href = "https://forms.gle/gSb4T6HBn7bBgLyj9"; // Version 2
+            }
+        }
+    </script>
+    <style>
+        body { 
+            text-align: center; 
+            padding-top: 20vh; 
+            font-family: sans-serif; 
+        }
+        button { 
+            padding: 15px 30px; 
+            font-size: 18px; 
+            cursor: pointer; 
+            background-color: #000; 
+            color: #fff; 
+            border: none; 
+            border-radius: 8px; 
+        }
+        button:hover { 
+            background-color: #333; 
+        }
+    </style>
+</head>
+<body>
+    <h2>설문에 참여해 주셔서 감사합니다!</h2>
+    <p>아래 버튼을 누르면 설문지로 이동합니다.</p>
+    <br>
+    <button onclick="goToSurvey()">설문 시작하기</button>
+</body>
+</html>
